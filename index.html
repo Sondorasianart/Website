@@ -17,49 +17,58 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-shell">
-      <a class="brand" href="index.html">Sondor Asian Art</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
+  <main class="home-main">
+    <section class="hero hero-showcase">
+      <div class="showcase-image" aria-hidden="true"></div>
+      <div class="showcase-overlay"></div>
+      <div class="wrap showcase-layout">
+        <aside class="showcase-sidebar">
+          <a class="brand showcase-brand" href="index.html">Sondor Asian Art</a>
           <p class="eyebrow">Toronto Procurement Studio</p>
-          <h1>Exceptional Asian Art, Sourced with Care</h1>
-          <p class="lede">
-            Sondor Asian Art helps collectors, designers, and hospitality clients acquire
-            distinctive East Asian ceramics, silverwork, and bespoke pieces through trusted
-            artisan relationships.
-          </p>
-          <div class="button-row">
-            <a class="button button-gold" href="contact.html">Start an Inquiry</a>
-            <a class="button button-outline" href="gallery.html">Explore the Gallery</a>
+          <nav class="showcase-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="showcase-note">
+            <p class="panel-label">Inquiry-Based Studio</p>
+            <p>
+              Curated procurement and bespoke commissions for collectors, designers, and hospitality clients.
+            </p>
           </div>
-        </div>
-        <div class="hero-panel">
-          <p class="panel-label">Areas of Focus</p>
-          <ul class="feature-list">
-            <li>Jianware</li>
-            <li>Blue-and-white porcelain</li>
-            <li>Redware</li>
-            <li>Mongolian silver</li>
-            <li>Celadon and greenware</li>
-            <li>Decorative vessels</li>
-          </ul>
-          <p class="panel-note">
-            This initial version is inquiry-based rather than inventory-based. Each request
-            begins with a conversation.
-          </p>
+        </aside>
+
+        <div class="showcase-content">
+          <div class="hero-copy showcase-copy">
+            <h1>Exceptional Asian Art, Sourced with Care</h1>
+            <p class="lede">
+              Sondor Asian Art helps collectors, designers, and hospitality clients acquire
+              distinctive East Asian ceramics, silverwork, and bespoke pieces through trusted
+              artisan relationships.
+            </p>
+            <div class="button-row">
+              <a class="button button-gold" href="contact.html">Start an Inquiry</a>
+              <a class="button button-outline button-light" href="gallery.html">Explore the Gallery</a>
+            </div>
+          </div>
+
+          <div class="hero-panel showcase-panel">
+            <p class="panel-label">Areas of Focus</p>
+            <ul class="feature-list">
+              <li>Jianware</li>
+              <li>Blue-and-white porcelain</li>
+              <li>Redware</li>
+              <li>Mongolian silver</li>
+              <li>Celadon and greenware</li>
+              <li>Decorative vessels</li>
+            </ul>
+            <p class="panel-note">
+              This initial version is inquiry-based rather than inventory-based. Each request
+              begins with a conversation.
+            </p>
+          </div>
         </div>
       </div>
     </section>
