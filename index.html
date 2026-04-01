@@ -4,172 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sondor Asian Art</title>
-  <meta
-    name="description"
-    content="Toronto-based procurement studio sourcing exceptional East Asian ceramics, silverwork, and bespoke decorative objects."
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
+  <meta name="description" content="Ceramics and silver, offered by inquiry.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="home-main">
-    <section class="hero hero-showcase">
-      <div class="showcase-image" aria-hidden="true"></div>
-      <div class="showcase-overlay"></div>
-      <div class="wrap showcase-layout">
-        <aside class="showcase-sidebar">
-          <a class="brand showcase-brand" href="index.html">Sondor Asian Art</a>
-          <p class="eyebrow">Toronto Procurement Studio</p>
-          <nav class="showcase-nav" aria-label="Main navigation">
-            <a href="index.html" aria-current="page">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-          <div class="showcase-note">
-            <p class="panel-label">Inquiry-Based Studio</p>
-            <p>
-              Curated procurement and bespoke commissions for collectors, designers, and hospitality clients.
-            </p>
-          </div>
-        </aside>
+  <header class="site-header">
+    <div class="site-bar">
+      <div class="brand">
+        <a class="brand__title" href="index.html">Sondor Asian Art</a>
+        <p class="eyebrow">Asian Art</p>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="commissions.html">Commissions</a>
+        <a href="about.html">About</a>
+        <a href="inquiry.html">Inquiry</a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="showcase-content">
-          <div class="hero-copy showcase-copy">
-            <h1>Exceptional Asian Art, Sourced with Care</h1>
-            <p class="lede">
-              Sondor Asian Art helps collectors, designers, and hospitality clients acquire
-              distinctive East Asian ceramics, silverwork, and bespoke pieces through trusted
-              artisan relationships.
-            </p>
-            <div class="button-row">
-              <a class="button button-gold" href="contact.html">Start an Inquiry</a>
-              <a class="button button-outline button-light" href="gallery.html">Explore the Gallery</a>
-            </div>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-media" aria-label="Featured works slideshow">
+        <div class="hero-slide hero-slide--one active" data-hero-slide>
+          <img src="assets/images/hero_jian_bowl_01.jpg" alt="Jianware bowl">
+          <div class="hero-slide__frame" aria-hidden="true"></div>
+          <div class="hero-slide__caption">
+            <span>Jianware</span>
+            <span>Ceramics</span>
           </div>
+        </div>
+        <div class="hero-slide hero-slide--two" data-hero-slide>
+          <img src="assets/images/hero_mongolian_silver_bowls_01.jpg" alt="Mongolian silver bowls">
+          <div class="hero-slide__frame" aria-hidden="true"></div>
+          <div class="hero-slide__caption">
+            <span>Mongolian Silver</span>
+            <span>Objects</span>
+          </div>
+        </div>
+        <div class="hero-slide hero-slide--three" data-hero-slide>
+          <img src="assets/images/hero_red_ware_teasets_01.jpg" alt="Red ware tea sets">
+          <div class="hero-slide__frame" aria-hidden="true"></div>
+          <div class="hero-slide__caption">
+            <span>Red Ware</span>
+            <span>Tea Sets</span>
+          </div>
+        </div>
+      </div>
 
-          <div class="hero-panel showcase-panel">
-            <p class="panel-label">Areas of Focus</p>
-            <ul class="feature-list">
-              <li>Jianware</li>
-              <li>Blue-and-white porcelain</li>
-              <li>Redware</li>
-              <li>Mongolian silver</li>
-              <li>Celadon and greenware</li>
-              <li>Decorative vessels</li>
-            </ul>
-            <p class="panel-note">
-              This initial version is inquiry-based rather than inventory-based. Each request
-              begins with a conversation.
-            </p>
-          </div>
+      <div class="hero-copy">
+        <div>
+          <p class="eyebrow">Sondor Asian Art</p>
+          <h1>Sourced Rarely. Offered Selectively.</h1>
+          <p class="lead">Ceramics and silver, offered by inquiry.</p>
+        </div>
+        <div class="divider">
+          <p class="eyebrow">Inquiry only</p>
+          <p><a class="inline-link" href="collections.html">View collections</a></p>
+          <p><a class="inline-link" href="inquiry.html">Make an inquiry</a></p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap intro-grid">
-        <div>
-          <p class="eyebrow">Refined Procurement</p>
-          <h2>A Refined Approach to Art Procurement</h2>
-        </div>
-        <p class="section-text">
-          We help clients source remarkable works that are difficult to access through typical
-          North American retail channels. From contemporary Jianware and redware to
-          blue-and-white porcelain and Mongolian silver, Sondor Asian Art combines scholarly
-          insight, direct artisan relationships, and concierge-level service to guide each
-          acquisition from concept to delivery.
-        </p>
+      <p class="eyebrow">Featured collections</p>
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-media card-media--ceramics">
+            <img src="assets/images/card_jian_bowl_01.jpg" alt="Ceramic bowl">
+          </div>
+          <div class="card-copy">
+            <h3>Ceramics</h3>
+            <p>Jianware, celadons, tea-dust glazes, and singular vessel forms.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media card-media--silver">
+            <img src="assets/images/card_forge_01.jpg" alt="Silver object">
+          </div>
+          <div class="card-copy">
+            <h3>Silver</h3>
+            <p>Selected Mongolian silverware and objects with weight and reserve.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media card-media--celadon">
+            <img src="assets/images/card_blue_ware_bowl_01.jpg" alt="Blue ware bowl">
+          </div>
+          <div class="card-copy">
+            <h3>Celadon</h3>
+            <p>Quiet green glazes held for collectors and interiors.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section muted">
-      <div class="wrap">
-        <p class="eyebrow">Services</p>
-        <h2>What We Do</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Curated Procurement</h3>
-            <p>
-              For clients seeking a finished work, we identify and source pieces that align with
-              a specific aesthetic, category, or spatial vision. We manage shortlisting, vetting,
-              coordination, and delivery so the process is clear and efficient.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Bespoke Commissions</h3>
-            <p>
-              For projects that require something custom, we work with artisans to commission
-              pieces tailored to your needs, including form, glaze, scale, inscription, and
-              matching sets.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Partnership &amp; Placement</h3>
-            <p>
-              We collaborate with select design, gallery, hospitality, and retail partners to
-              place works in meaningful spaces and create opportunities for curated displays,
-              referrals, and special projects.
-            </p>
-          </article>
-        </div>
-      </div>
+    <section class="section statement">
+      <h2>Ceramics and silver selected with restraint.</h2>
     </section>
 
     <section class="section">
-      <div class="wrap split-grid">
-        <div>
-          <p class="eyebrow">Why Sondor</p>
-          <h2>Why Clients Work With Sondor</h2>
-          <ul class="check-list">
-            <li>Direct relationships with artisans and makers</li>
-            <li>Thoughtful sourcing rooted in art-historical knowledge</li>
-            <li>Concierge coordination from inquiry to delivery</li>
-            <li>A focus on authenticity, quality, and cultural specificity</li>
-            <li>Tailored support for collectors, interior designers, and hospitality projects</li>
-          </ul>
+      <div class="feature-row">
+        <div class="feature-media feature-media--teadust">
+          <img src="assets/images/feature_teadust_01.jpg" alt="Tea-dust ceramic detail">
         </div>
-        <aside class="callout">
-          <p class="panel-label">Current Website Direction</p>
-          <p>
-            Luxury, editorial, and quietly confident. The visual style can evolve as the brand
-            matures, including a future logo refinement, while the core message stays the same.
-          </p>
-        </aside>
+        <div>
+          <p class="eyebrow">Commissions</p>
+          <h2>Private sourcing for collectors and interiors.</h2>
+          <p class="muted">Handled selectively, by conversation.</p>
+          <p><a class="inline-link" href="commissions.html">Read about commissions</a></p>
+        </div>
       </div>
-    </section>
 
-    <section class="section muted">
-      <div class="wrap cta-shell">
-        <p class="eyebrow">Inquiry First</p>
-        <h2>Looking for a Specific Piece?</h2>
-        <p class="section-text narrow">
-          Whether you are furnishing a private residence, sourcing for a client project, or
-          seeking a one-of-a-kind commission, we welcome inquiries. Tell us what you are looking
-          for, and we will assess whether it can be sourced or made through our network.
-        </p>
-        <a class="button button-gold" href="contact.html">Contact Sondor</a>
+      <div class="feature-row">
+        <div>
+          <p class="eyebrow">Inquiry</p>
+          <h2>Inquiries are welcomed privately.</h2>
+          <p class="muted">No public pricing is shown.</p>
+          <p><a class="inline-link" href="inquiry.html">Open inquiry page</a></p>
+        </div>
+        <div class="feature-media feature-media--oxblood">
+          <img src="assets/images/feature_oxblood_01.jpg" alt="Ceramic object detail">
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-shell">
-      <div>
-        <p class="footer-brand">Sondor Asian Art</p>
-        <p class="footer-text">
-          Toronto-based procurement studio for East Asian ceramics, silverwork, and bespoke
-          decorative objects.
-        </p>
+    <div class="site-footer__inner">
+      <div class="footer-brand">
+        <a class="footer-brand__title" href="index.html">Sondor Asian Art</a>
+        <p class="eyebrow">Ceramics and silver</p>
+        <p class="footer-copy">Sourced rarely. Offered selectively.</p>
       </div>
-      <a class="footer-link" href="mailto:Elizabeth@sondorasianart.com">Elizabeth@sondorasianart.com</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="commissions.html">Commissions</a>
+        <a href="about.html">About</a>
+        <a href="inquiry.html">Inquiry</a>
+      </nav>
+      <p class="footer-note">Ceramics and silver. Offered by inquiry.</p>
     </div>
   </footer>
+
+  <script src="hero.js"></script>
 </body>
 </html>
