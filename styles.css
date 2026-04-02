@@ -64,12 +64,41 @@ a {
   gap: 2px;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .brand__title,
 .footer-brand__title {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.35rem, 2vw, 1.55rem);
   font-weight: 400;
   letter-spacing: -0.02em;
+}
+
+.brand__logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand__logo {
+  display: block;
+  width: auto;
+  height: 38px;
+}
+
+.brand__name {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.footer-label {
+  margin: 0;
+  font-size: 0.94rem;
+  color: var(--muted);
 }
 
 .eyebrow {
@@ -481,6 +510,10 @@ h3 {
 
   .site-bar {
     align-items: start;
+  }
+
+  .brand__logo {
+    height: 34px;
   }
 
   .site-nav,
