@@ -322,6 +322,10 @@ h3 {
   object-position: center 46%;
 }
 
+.card-media--stoneware img {
+  object-position: center 44%;
+}
+
 .card-media--celadon img {
   object-position: center 44%;
 }
@@ -366,6 +370,10 @@ h3 {
 
 .feature-media--teadust img {
   object-position: center 44%;
+}
+
+.feature-media--blue-table img {
+  object-position: center 46%;
 }
 
 .feature-media--blueware img {
