@@ -374,6 +374,7 @@ h3 {
 
 .feature-media--blue-table img {
   object-position: center 46%;
+  transform: scale(0.94);
 }
 
 .feature-media--blueware img {
