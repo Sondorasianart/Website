@@ -129,6 +129,11 @@ a {
   padding-bottom: 0.08rem;
 }
 
+.site-nav a {
+  line-height: 1;
+  padding-bottom: 0.02rem;
+}
+
 .site-nav a::after,
 .footer-nav a::after,
 .inline-link::after {
@@ -142,6 +147,10 @@ a {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 220ms ease;
+}
+
+.site-nav a::after {
+  bottom: 0;
 }
 
 .site-nav a:hover::after,
