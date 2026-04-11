@@ -155,6 +155,16 @@ a {
   bottom: 0;
 }
 
+.footer-nav a {
+  display: inline-block;
+  line-height: 1;
+  padding-bottom: 0.18rem;
+}
+
+.footer-nav a::after {
+  bottom: 0;
+}
+
 .site-nav a:hover::after,
 .footer-nav a:hover::after,
 .inline-link:hover::after,
@@ -411,6 +421,21 @@ h3 {
 .process-step p {
   margin: 0;
   color: var(--muted);
+}
+
+.collection-copy {
+  max-width: 44rem;
+}
+
+.collection-copy h2 {
+  margin-bottom: 0.75rem;
+}
+
+.collection-copy p {
+  margin: 0;
+  max-width: 42rem;
+  color: var(--muted);
+  line-height: 1.68;
 }
 
 .feature-media {
