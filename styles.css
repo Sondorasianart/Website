@@ -424,6 +424,23 @@ h3 {
   color: var(--muted);
 }
 
+.inquiry-layout {
+  align-items: start;
+}
+
+.inquiry-work {
+  gap: 0.7rem;
+  align-content: start;
+}
+
+.inquiry-work .eyebrow {
+  margin-bottom: 0.2rem;
+}
+
+.inquiry-work .process-step {
+  padding-top: 0.7rem;
+}
+
 .collection-copy {
   max-width: 44rem;
 }
