@@ -115,6 +115,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
+  align-items: flex-start;
 }
 
 .site-nav a,
@@ -130,8 +131,9 @@ a {
 }
 
 .site-nav a {
+  display: inline-block;
   line-height: 1;
-  padding-bottom: 0.35rem;
+  padding-bottom: 0.18rem;
 }
 
 .site-nav a::after,
@@ -150,7 +152,7 @@ a {
 }
 
 .site-nav a::after {
-  bottom: 0.12rem;
+  bottom: 0;
 }
 
 .site-nav a:hover::after,
