@@ -150,7 +150,7 @@ a {
 }
 
 .site-nav a::after {
-  bottom: 0.12;
+  bottom: 0.12rem;
 }
 
 .site-nav a:hover::after,
