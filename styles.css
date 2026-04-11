@@ -131,7 +131,7 @@ a {
 
 .site-nav a {
   line-height: 1;
-  padding-bottom: 0.02rem;
+  padding-bottom: 0.35rem;
 }
 
 .site-nav a::after,
@@ -150,7 +150,7 @@ a {
 }
 
 .site-nav a::after {
-  bottom: 0;
+  bottom: 0.12;
 }
 
 .site-nav a:hover::after,
