@@ -273,16 +273,22 @@ a {
   object-fit: cover;
 }
 
-.hero-slide--one img {
-  object-position: center 42%;
+.hero-image--home-one {
+  --image-position-desktop: center 42%;
+  --image-position-mobile: center 42%;
+  object-position: var(--image-position-desktop);
 }
 
-.hero-slide--two img {
-  object-position: center 48%;
+.hero-image--home-two {
+  --image-position-desktop: center 48%;
+  --image-position-mobile: center 48%;
+  object-position: var(--image-position-desktop);
 }
 
-.hero-slide--three img {
-  object-position: center 44%;
+.hero-image--home-three {
+  --image-position-desktop: center 44%;
+  --image-position-mobile: center 44%;
+  object-position: var(--image-position-desktop);
 }
 
 .hero-slide__frame {
@@ -291,20 +297,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 10px;
   pointer-events: none;
-}
-
-.hero-slide__caption {
-  position: absolute;
-  left: 1.6rem;
-  right: 1.6rem;
-  bottom: 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .hero-copy {
@@ -424,20 +416,22 @@ h3 {
   object-fit: cover;
 }
 
-.card-media--ceramics img {
-  object-position: center 42%;
+.card-media--home-porcelain img {
+  --image-position-desktop: center 42%;
+  --image-position-mobile: center 42%;
+  object-position: var(--image-position-desktop);
 }
 
-.card-media--silver img {
-  object-position: center 46%;
+.card-media--home-stoneware img {
+  --image-position-desktop: center 44%;
+  --image-position-mobile: center 44%;
+  object-position: var(--image-position-desktop);
 }
 
-.card-media--stoneware img {
-  object-position: center 44%;
-}
-
-.card-media--celadon img {
-  object-position: center 44%;
+.card-media--home-silver img {
+  --image-position-desktop: center 44%;
+  --image-position-mobile: center 44%;
+  object-position: var(--image-position-desktop);
 }
 
 .card-copy,
@@ -534,9 +528,20 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 24%;
   border: 1px solid rgba(17, 19, 23, 0.08);
   border-radius: 14px;
+}
+
+.about-bio__media--elizabeth img {
+  --image-position-desktop: center 24%;
+  --image-position-mobile: center 24%;
+  object-position: var(--image-position-desktop);
+}
+
+.about-bio__media--carter img {
+  --image-position-desktop: center 24%;
+  --image-position-mobile: center 24%;
+  object-position: var(--image-position-desktop);
 }
 
 .about-bio__copy {
@@ -571,20 +576,46 @@ h3 {
   object-fit: cover;
 }
 
-.feature-media--teadust img {
-  object-position: center 44%;
+.feature-media--home-commissions img {
+  --image-position-desktop: center 46%;
+  --image-position-mobile: center 46%;
+  object-position: var(--image-position-desktop);
 }
 
-.feature-media--blue-table img {
-  object-position: center 46%;
+.feature-media--home-inquiry img {
+  --image-position-desktop: center 52%;
+  --image-position-mobile: center 52%;
+  object-position: var(--image-position-desktop);
 }
 
-.feature-media--blueware img {
-  object-position: center 46%;
+.feature-media--collections-porcelain img {
+  --image-position-desktop: center 44%;
+  --image-position-mobile: center 44%;
+  object-position: var(--image-position-desktop);
 }
 
-.feature-media--oxblood img {
-  object-position: center 52%;
+.feature-media--collections-stoneware img {
+  --image-position-desktop: center 46%;
+  --image-position-mobile: center 46%;
+  object-position: var(--image-position-desktop);
+}
+
+.feature-media--collections-silver img {
+  --image-position-desktop: center 52%;
+  --image-position-mobile: center 52%;
+  object-position: var(--image-position-desktop);
+}
+
+.feature-media--commissions-main img {
+  --image-position-desktop: center 44%;
+  --image-position-mobile: center 44%;
+  object-position: var(--image-position-desktop);
+}
+
+.feature-media--inquiry-main img {
+  --image-position-desktop: center 52%;
+  --image-position-mobile: center 52%;
+  object-position: var(--image-position-desktop);
 }
 
 .list {
@@ -699,6 +730,24 @@ h3 {
 }
 
 @media (max-width: 900px) {
+  .hero-image--home-one,
+  .hero-image--home-two,
+  .hero-image--home-three,
+  .card-media--home-porcelain img,
+  .card-media--home-stoneware img,
+  .card-media--home-silver img,
+  .feature-media--home-commissions img,
+  .feature-media--home-inquiry img,
+  .feature-media--collections-porcelain img,
+  .feature-media--collections-stoneware img,
+  .feature-media--collections-silver img,
+  .feature-media--commissions-main img,
+  .feature-media--inquiry-main img,
+  .about-bio__media--elizabeth img,
+  .about-bio__media--carter img {
+    object-position: var(--image-position-mobile);
+  }
+
   .site-bar {
     flex-wrap: wrap;
     align-items: center;
@@ -819,15 +868,6 @@ h3 {
   .hero-media {
     min-height: 58vh;
     border-radius: 14px;
-  }
-
-  .hero-slide__caption {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .hero-slide__caption span:last-child {
-    display: none;
   }
 
   .card-media {
