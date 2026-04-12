@@ -12,12 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     header.classList.toggle("nav-open", open);
     button.setAttribute("aria-expanded", String(open));
     button.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
-
-    if (mobileQuery.matches) {
-      nav.hidden = !open;
-    } else {
-      nav.hidden = false;
-    }
   };
 
   const syncMenuMode = () => {
@@ -27,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.remove("nav-open");
       button.setAttribute("aria-expanded", "false");
       button.setAttribute("aria-label", "Open navigation menu");
-      nav.hidden = false;
     }
   };
 
