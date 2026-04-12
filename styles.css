@@ -327,6 +327,12 @@ a {
     font-size: clamp(2.75rem, 4.6vw, 4.7rem);
     white-space: nowrap;
   }
+
+  .hero-copy .lead {
+    max-width: 44rem;
+    font-size: clamp(1.12rem, 1.5vw, 1.25rem);
+    white-space: nowrap;
+  }
 }
 
 h1,
