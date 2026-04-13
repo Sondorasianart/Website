@@ -51,24 +51,30 @@
           <img src="assets/images/inquiry_jianware_03.jpg" alt="Supporting object detail">
         </div>
         <div class="form-shell" style="margin-top: 1.2rem;">
-          <form class="minimal-form">
+          <div class="form-status" data-fs-success>Inquiry received. We&rsquo;ll be in touch shortly.</div>
+          <div class="form-status form-status--error" data-fs-error></div>
+          <form class="minimal-form" id="inquiry-form">
             <label>
               Name
-              <input type="text" name="name">
+              <input type="text" id="inquiry-name" name="name" data-fs-field>
+              <span class="field-error" data-fs-error="name"></span>
             </label>
             <label>
               Email
-              <input type="email" name="email">
+              <input type="email" id="inquiry-email" name="email" data-fs-field>
+              <span class="field-error" data-fs-error="email"></span>
             </label>
             <label>
               Subject
-              <input type="text" name="subject">
+              <input type="text" id="inquiry-subject" name="subject" data-fs-field>
+              <span class="field-error" data-fs-error="subject"></span>
             </label>
             <label>
               Notes
-              <textarea name="notes"></textarea>
+              <textarea id="inquiry-notes" name="notes" data-fs-field></textarea>
+              <span class="field-error" data-fs-error="notes"></span>
             </label>
-            <button class="form-submit" type="submit">Send Inquiry</button>
+            <button class="form-submit" type="submit" data-fs-submit-btn>Send Inquiry</button>
           </form>
         </div>
       </div>
@@ -92,5 +98,7 @@
     </div>
   </footer>
   <script src="nav.js"></script>
+  <script src="form.js"></script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>

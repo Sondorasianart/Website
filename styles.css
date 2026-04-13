@@ -643,6 +643,43 @@ h3 {
   padding: 1.6rem;
 }
 
+.form-status,
+.field-error {
+  display: none;
+  color: var(--muted);
+}
+
+.form-status {
+  margin: 0 0 1rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.form-status--error,
+.field-error[data-fs-active] {
+  color: #7f3a36;
+}
+
+[data-fs-success][data-fs-active],
+[data-fs-error=""][data-fs-active],
+[data-fs-error]:not([data-fs-error=""])[data-fs-active] {
+  display: block;
+}
+
+.field-error {
+  margin-top: 0.35rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+[data-fs-field][aria-invalid="true"] {
+  border-bottom-color: #7f3a36;
+}
+
 .minimal-form {
   display: grid;
   gap: 1.2rem;
@@ -693,6 +730,11 @@ h3 {
   text-transform: uppercase;
   color: var(--accent);
   cursor: pointer;
+}
+
+.form-submit:disabled {
+  opacity: 0.42;
+  cursor: wait;
 }
 
 .site-footer {
