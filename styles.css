@@ -422,14 +422,14 @@ h3 {
   object-fit: cover;
 }
 
-.card-media--home-porcelain img {
+.image-switch--mobile {
+  display: none;
+}
+
+.card-media--home-porcelain .image-switch {
   --image-position-desktop: center 88%;
   --image-position-mobile: center 76%;
-  --image-scale-desktop: 1.10;
-  --image-scale-mobile: 1.01;
   object-position: var(--image-position-desktop);
-  transform: scale(var(--image-scale-desktop));
-  transform-origin: center;
 }
 
 .card-media--home-stoneware img {
@@ -800,9 +800,16 @@ h3 {
     object-position: var(--image-position-mobile);
   }
 
-  .card-media--home-porcelain img {
+  .image-switch--desktop {
+    display: none;
+  }
+
+  .image-switch--mobile {
+    display: block;
+  }
+
+  .card-media--home-porcelain .image-switch {
     object-position: var(--image-position-mobile);
-    transform: scale(var(--image-scale-mobile));
   }
 
   .site-bar {
