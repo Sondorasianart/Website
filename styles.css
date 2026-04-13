@@ -423,8 +423,8 @@ h3 {
 }
 
 .card-media--home-porcelain img {
-  --image-position-desktop: center 68%;
-  --image-position-mobile: center 64%;
+  --image-position-desktop: center 75%;
+  --image-position-mobile: center 75%;
   object-position: var(--image-position-desktop);
 }
 
