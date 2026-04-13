@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
+      console.info("[Inquiry form] Posting to endpoint:", form.action);
+
       const response = await fetch(form.action, {
         method: "POST",
         body: new FormData(form),
@@ -57,9 +59,24 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       });
 
-      const result = await response.json();
+      console.info("[Inquiry form] Response status:", response.status, response.statusText);
 
-      if (response.ok) {
+      const contentType = response.headers.get("content-type") || "";
+      const rawBody = await response.text();
+      let result = null;
+
+      if (contentType.includes("application/json") && rawBody) {
+        try {
+          result = JSON.parse(rawBody);
+        } catch (parseError) {
+          console.error("[Inquiry form] Failed to parse JSON response:", parseError, rawBody);
+        }
+      }
+
+      console.info("[Inquiry form] Parsed response payload:", result || rawBody);
+
+      if (response.ok && (!result || result.ok !== false)) {
+        console.info("[Inquiry form] Submission treated as success.");
         if (success) {
           success.textContent = "Inquiry received. We'll be in touch shortly.";
           success.setAttribute("data-fs-active", "");
@@ -68,6 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
         return;
       }
+
+      console.warn("[Inquiry form] Submission treated as failure.");
 
       if (Array.isArray(result?.errors) && result.errors.length) {
         result.errors.forEach((item) => {
@@ -92,10 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
           showFormError(message);
         });
       } else {
-        showFormError(result?.error || "There was a problem sending your inquiry. Please try again.");
+        showFormError(result?.error || "Something went wrong and your inquiry was not sent. Please try again.");
       }
-    } catch (_error) {
-      showFormError("There was a problem sending your inquiry. Please try again.");
+    } catch (error) {
+      console.error("[Inquiry form] Network or unexpected error:", error);
+      showFormError("Something went wrong and your inquiry was not sent. Please try again.");
     } finally {
       if (submitButton) {
         submitButton.disabled = false;
