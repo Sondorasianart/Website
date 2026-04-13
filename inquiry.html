@@ -53,7 +53,7 @@
         <div class="form-shell" style="margin-top: 1.2rem;">
           <div class="form-status" data-fs-success>Inquiry received. We&rsquo;ll be in touch shortly.</div>
           <div class="form-status form-status--error" data-fs-error></div>
-          <form class="minimal-form" id="inquiry-form">
+          <form class="minimal-form" id="inquiry-form" action="https://formspree.io/f/mdayoaja" method="POST" novalidate>
             <label>
               Name
               <input type="text" id="inquiry-name" name="name" data-fs-field>
@@ -99,6 +99,5 @@
   </footer>
   <script src="nav.js"></script>
   <script src="form.js"></script>
-  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
