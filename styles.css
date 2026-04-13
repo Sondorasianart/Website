@@ -423,9 +423,13 @@ h3 {
 }
 
 .card-media--home-porcelain img {
-  --image-position-desktop: center 75%;
-  --image-position-mobile: center 75%;
+  --image-position-desktop: center 78%;
+  --image-position-mobile: center 76%;
+  --image-scale-desktop: 1.03;
+  --image-scale-mobile: 1.01;
   object-position: var(--image-position-desktop);
+  transform: scale(var(--image-scale-desktop));
+  transform-origin: center;
 }
 
 .card-media--home-stoneware img {
@@ -782,7 +786,6 @@ h3 {
   .hero-image--home-two,
   .hero-image--home-three,
   .hero-image--home-four,
-  .card-media--home-porcelain img,
   .card-media--home-stoneware img,
   .card-media--home-silver img,
   .feature-media--home-commissions img,
@@ -795,6 +798,11 @@ h3 {
   .about-bio__media--elizabeth img,
   .about-bio__media--carter img {
     object-position: var(--image-position-mobile);
+  }
+
+  .card-media--home-porcelain img {
+    object-position: var(--image-position-mobile);
+    transform: scale(var(--image-scale-mobile));
   }
 
   .site-bar {
