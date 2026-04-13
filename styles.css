@@ -291,6 +291,12 @@ a {
   object-position: var(--image-position-desktop);
 }
 
+.hero-image--home-four {
+  --image-position-desktop: center 46%;
+  --image-position-mobile: center 46%;
+  object-position: var(--image-position-desktop);
+}
+
 .hero-slide__frame {
   position: absolute;
   inset: 18px;
@@ -733,6 +739,7 @@ h3 {
   .hero-image--home-one,
   .hero-image--home-two,
   .hero-image--home-three,
+  .hero-image--home-four,
   .card-media--home-porcelain img,
   .card-media--home-stoneware img,
   .card-media--home-silver img,
