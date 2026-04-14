@@ -273,30 +273,6 @@ a {
   object-fit: cover;
 }
 
-.hero-image--home-one {
-  --image-position-desktop: center 42%;
-  --image-position-mobile: center 42%;
-  object-position: var(--image-position-desktop);
-}
-
-.hero-image--home-two {
-  --image-position-desktop: center 48%;
-  --image-position-mobile: center 48%;
-  object-position: var(--image-position-desktop);
-}
-
-.hero-image--home-three {
-  --image-position-desktop: center 44%;
-  --image-position-mobile: center 44%;
-  object-position: var(--image-position-desktop);
-}
-
-.hero-image--home-four {
-  --image-position-desktop: center 46%;
-  --image-position-mobile: center 46%;
-  object-position: var(--image-position-desktop);
-}
-
 .hero-slide__frame {
   position: absolute;
   inset: 18px;
@@ -427,21 +403,7 @@ h3 {
 }
 
 .card-media--home-porcelain .image-switch {
-  --image-position-desktop: center 88%;
-  --image-position-mobile: center 76%;
-  object-position: var(--image-position-desktop);
-}
-
-.card-media--home-stoneware img {
-  --image-position-desktop: center 44%;
-  --image-position-mobile: center 44%;
-  object-position: var(--image-position-desktop);
-}
-
-.card-media--home-silver img {
-  --image-position-desktop: center 44%;
-  --image-position-mobile: center 44%;
-  object-position: var(--image-position-desktop);
+  object-position: center;
 }
 
 .card-copy,
@@ -542,18 +504,6 @@ h3 {
   border-radius: 14px;
 }
 
-.about-bio__media--elizabeth img {
-  --image-position-desktop: center 24%;
-  --image-position-mobile: center 24%;
-  object-position: var(--image-position-desktop);
-}
-
-.about-bio__media--carter img {
-  --image-position-desktop: center 24%;
-  --image-position-mobile: center 24%;
-  object-position: var(--image-position-desktop);
-}
-
 .about-bio__copy {
   max-width: 42rem;
 }
@@ -584,48 +534,6 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.feature-media--home-commissions img {
-  --image-position-desktop: center 46%;
-  --image-position-mobile: center 46%;
-  object-position: var(--image-position-desktop);
-}
-
-.feature-media--home-inquiry img {
-  --image-position-desktop: center 52%;
-  --image-position-mobile: center 52%;
-  object-position: var(--image-position-desktop);
-}
-
-.feature-media--collections-porcelain img {
-  --image-position-desktop: center 44%;
-  --image-position-mobile: center 44%;
-  object-position: var(--image-position-desktop);
-}
-
-.feature-media--collections-stoneware img {
-  --image-position-desktop: center 46%;
-  --image-position-mobile: center 46%;
-  object-position: var(--image-position-desktop);
-}
-
-.feature-media--collections-silver img {
-  --image-position-desktop: center 52%;
-  --image-position-mobile: center 52%;
-  object-position: var(--image-position-desktop);
-}
-
-.feature-media--commissions-main img {
-  --image-position-desktop: center 44%;
-  --image-position-mobile: center 44%;
-  object-position: var(--image-position-desktop);
-}
-
-.feature-media--inquiry-main img {
-  --image-position-desktop: center 52%;
-  --image-position-mobile: center 52%;
-  object-position: var(--image-position-desktop);
 }
 
 .list {
@@ -782,24 +690,6 @@ h3 {
 }
 
 @media (max-width: 900px) {
-  .hero-image--home-one,
-  .hero-image--home-two,
-  .hero-image--home-three,
-  .hero-image--home-four,
-  .card-media--home-stoneware img,
-  .card-media--home-silver img,
-  .feature-media--home-commissions img,
-  .feature-media--home-inquiry img,
-  .feature-media--collections-porcelain img,
-  .feature-media--collections-stoneware img,
-  .feature-media--collections-silver img,
-  .feature-media--commissions-main img,
-  .feature-media--inquiry-main img,
-  .about-bio__media--elizabeth img,
-  .about-bio__media--carter img {
-    object-position: var(--image-position-mobile);
-  }
-
   .image-switch--desktop {
     display: none;
   }
@@ -809,7 +699,7 @@ h3 {
   }
 
   .card-media--home-porcelain .image-switch {
-    object-position: var(--image-position-mobile);
+    object-position: center;
   }
 
   .site-bar {
